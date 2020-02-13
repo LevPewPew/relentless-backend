@@ -30,7 +30,7 @@ mongoose.connect(DB_URL, dbConfig, (err) => {
 
 app.use(morgan('dev'));
 app.use(express.json());
-app.use(cors(corsOptions)); // TODO put back in
+app.use(cors()); // TODO put back in
 app.use(require('./routes/index'));
 
 app.listen(PORT, () => console.log(`Listening on port ${PORT}`));
