@@ -7,7 +7,6 @@ const index = (req, res) => {
 
 router.get('/', index);
 
-// define routes here, this will mean anything in the categories-routes.js file (yet to be created) will assume that /categories will prepend the route path defined in categories-routes.js
-router.use('/categories', require('./categories-routes'));
+router.use('/cards', require('./cards-routes'));
 
 module.exports = router;

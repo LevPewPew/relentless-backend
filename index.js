@@ -9,8 +9,8 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 const DB_URL = process.env.DB_URL;
 const dbConfig = { useNewUrlParser: true, useUnifiedTopology: true };
-const whitelist = ['http://localhost:3000', 'https://FRONT-END-URL-PLACEHOLDER']; // REPLACE
-const corsOptions = {
+const whitelist = [ 'http://localhost:3000', 'https://FRONT-END-URL-PLACEHOLDER' ]; // TODO, replace with deployed site when known
+const corsOptions = { // TODO put back in
   origin: function (origin, callback) {
     if (whitelist.indexOf(origin) !== -1) {
       callback(null, true);
@@ -30,7 +30,7 @@ mongoose.connect(DB_URL, dbConfig, (err) => {
 
 app.use(morgan('dev'));
 app.use(express.json());
-app.use(cors(corsOptions));
+app.use(cors(corsOptions)); // TODO put back in
 app.use(require('./routes/index'));
 
 app.listen(PORT, () => console.log(`Listening on port ${PORT}`));

@@ -1,9 +1,9 @@
-const Category = require('../models/category');
+const Card = require('../models/card');
 
 const index = async (req, res) => {
   try {
-    const categories = await Category.find();
-    res.send(categories);
+    const cards = await Card.find();
+    res.send(cards);
   } catch (err) {
     res.status(404).send(err);
   }
@@ -16,8 +16,8 @@ const create = async (req, res) => {
   } = req.body;
   
   try {
-    const newCategory = await Category.create({title, description});
-    res.send(newCategory);
+    const newCard = await Card.create({ title, description });
+    res.send(newCard);
   } catch (err) {
     res.status(400).send(err);
   }
