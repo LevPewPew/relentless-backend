@@ -1,0 +1,29 @@
+{
+  "name": "mern-boiler-backend",
+  "version": "1.0.0",
+  "description": "A boiler plate for a react backend in a MERN app. Some values are placeholders and should be removed as appropriate.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LevPewPew/mern-boiler-backend.git"
+  },
+  "author": "Levente Toth",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LevPewPew/mern-boiler-backend/issues"
+  },
+  "homepage": "https://github.com/LevPewPew/mern-boiler-backend#readme",
+  "devDependencies": {
+    "morgan": "^1.9.1",
+    "nodemon": "^2.0.2"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.8.12"
+  }
+}
