@@ -11,12 +11,12 @@ const index = async (req, res) => {
 
 const create = async (req, res) => {
   const {
-    title,
-    description
+    question,
+    answer
   } = req.body;
   
   try {
-    const newCard = await Card.create({ title, description });
+    const newCard = await Card.create({ question, answer });
     res.send(newCard);
   } catch (err) {
     res.status(400).send(err);

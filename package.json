@@ -1,7 +1,7 @@
 {
-  "name": "mern-boiler-backend",
+  "name": "relentless-backend",
   "version": "1.0.0",
-  "description": "A boiler plate for a react backend in a MERN app. Some values are placeholders and should be removed as appropriate.",
+  "description": "A flashcard app for developers. Express and MongoDB backend",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
