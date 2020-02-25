@@ -8,5 +8,6 @@ const index = (req, res) => {
 router.get('/', index);
 
 router.use('/cards', require('./cards-routes'));
+router.use('/decks', require('./decks-routes'));
 
 module.exports = router;
