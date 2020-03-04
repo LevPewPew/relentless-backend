@@ -10,6 +10,9 @@ const deckSchema = new Schema(
     description: {
       type: String,
       required: true
+    },
+    cards: {
+      type: Array
     }
   },
   {
